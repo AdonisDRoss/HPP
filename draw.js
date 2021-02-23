@@ -1,7 +1,10 @@
 //declarations
-var p1, p1V, p2V, ball, ballV,p1Score,p2Score;
+var p1, p1V, computer, p2V, ball, ballV,p1Score,p2Score;
 function setup(){
-createCanvas(600, 400,);
+let canvas = createCanvas(600, 400,);
+
+
+
 p1= p2 =height/2 -50;
 p1V= p2V=0;
 ball= createVector(width/2, height/2);
@@ -21,8 +24,15 @@ var p2SS = new Audio('./sounds/mixkit-arcade-video-game-bonus-2044.wav')
 
 //draw board 
 function draw(){
-background(51, 200);
-document.body.style.backgroundColor = "darkslategrey";
+
+document.body.style.background = "linear-gradient(to bottom, #071B26 0%,#071B26 30%,#8A3B12 80%,#240E03 100%";
+document.body.style.backgroundRepeat = "no-repeat"
+document.body.style.textAlign = "center"
+document.body.style.position = "center"
+document.body.style.backgroundSize = "cover"
+
+background(57, 106, 133);
+
 
 //scoreboard
 text(p1Score + ' | ' + p2Score,width /2, 240);
